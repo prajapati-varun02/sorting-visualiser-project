@@ -1,0 +1,70 @@
+body {
+  @apply bg-black;
+}
+
+.wrapper {
+  margin-left: 0;
+  @apply h-full min-h-screen flex justify-between;
+}
+
+.array {
+  width: calc(100vw - 230px);
+  @apply fixed left-[230px] h-screen min-h-[200px] gap-1 p-6 pb-8 flex flex-nowrap justify-center items-end mx-auto;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.element-bar {
+  @apply mx-auto;
+}
+
+.sideNavbar {
+  @apply flex flex-col items-center h-full min-h-screen w-[230px] min-w-[230px] font-bold z-10 bg-gray-900 rounded-md;
+  box-shadow: rgba(192, 191, 191, 0.35) 0px 5px 30px;
+}
+
+.sideNavbar h3 {
+  @apply text-2xl underline text-white hover:text-blue-300 transition duration-300 pt-4;
+}
+
+.sliderLabel {
+  @apply m-0 p-0 text-center text-gray-100 hover:text-blue-500;
+}
+
+.btn {
+  @apply text-sm w-[100px] p-[6px] text-gray-400 font-medium bg-transparent uppercase cursor-pointer rounded-full border-gray-400 border-2 duration-300;
+}
+
+.btn-sound {
+  @apply text-sm w-[100px] p-[6px] text-gray-400 font-medium bg-transparent uppercase cursor-pointer rounded-full border-gray-400 border-2 duration-300;
+}
+
+.btn-sound:hover {
+  @apply text-gray-100 border-gray-100;
+  filter: drop-shadow(0 0 30px rgba(81, 81, 81, 0.7));
+  box-shadow: rgba(192, 191, 191, 0.35) 0px 5px 30px;
+}
+
+.btn:hover {
+  @apply text-gray-100 border-gray-100;
+  filter: drop-shadow(0 0 30px rgba(81, 81, 81, 0.7));
+  box-shadow: rgba(192, 191, 191, 0.35) 0px 5px 30px;
+}
+
+.logo {
+  @apply cursor-pointer opacity-95 hover:scale-110 hover:opacity-100 transition duration-300;
+  filter: drop-shadow(0 0 15px rgba(81, 81, 81, 0.7));
+}
+
+.btndisabled {
+  @apply text-gray-100 border-gray-100;
+  filter: drop-shadow(0 0 30px rgba(81, 81, 81, 0.7));
+  box-shadow: rgba(192, 191, 191, 0.35) 0px 5px 30px;
+}
+
+.btn-group {
+  @apply flex flex-col justify-between gap-2 pb-3 pt-0;
+}
